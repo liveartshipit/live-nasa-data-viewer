@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 230 55% 12%;
+    --foreground: 210 20% 98%;
+    --card: 220 12% 18%;
+    --card-foreground: 210 20% 98%;
+    --popover: 220 12% 18%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 218 72% 18%;
+    --primary-foreground: 205 100% 95%;
+    --secondary: 230 55% 12%;
+    --secondary-foreground: 205 100% 95%;
+    --tertiary: 320 80% 48%;
+    --tertiary-foreground: 0 0% 100%;
+    --neutral: 221 19% 96%;
+    --neutral-foreground: 222 14% 16%;
+    --muted: 220 10% 25%;
+    --muted-foreground: 220 13% 88%;
+    --accent: 218 72% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 155 58% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 28 85% 54%;
+    --warning-foreground: 0 0% 100%;
+    --border: 220 10% 25%;
+    --input: 220 10% 25%;
+    --ring: 205 100% 60%;
+    --radius: 12px;
+  }
+
+  .dark {
+    --background: 230 55% 12%;
+    --foreground: 210 20% 98%;
+    --card: 220 12% 18%;
+    --card-foreground: 210 20% 98%;
+    --popover: 220 12% 18%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 218 72% 18%;
+    --primary-foreground: 205 100% 95%;
+    --secondary: 230 55% 12%;
+    --secondary-foreground: 205 100% 95%;
+    --tertiary: 320 80% 48%;
+    --tertiary-foreground: 0 0% 100%;
+    --neutral: 221 19% 96%;
+    --neutral-foreground: 222 14% 16%;
+    --muted: 220 10% 25%;
+    --muted-foreground: 220 13% 88%;
+    --accent: 218 72% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 155 58% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 28 85% 54%;
+    --warning-foreground: 0 0% 100%;
+    --border: 220 10% 25%;
+    --input: 220 10% 25%;
+    --ring: 205 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply bg-background text-foreground;
+  }
+}
